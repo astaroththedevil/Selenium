@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.ArrayList;
 
@@ -15,7 +16,9 @@ public class SeleniumWebsiteChromedriverDownload2Test {
     @Before
     public void setup(){
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+        driver = new ChromeDriver(options);
     }
 
     String[] paths1 = {"//*[@id=\"main_navbar\"]/ul/li[4]/a/span", "//*[@id=\"m-documentationgetting_started\"]/span",
