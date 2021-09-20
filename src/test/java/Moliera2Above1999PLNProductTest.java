@@ -30,7 +30,7 @@ public class Moliera2Above1999PLNProductTest {
     }
 
     @Test
-    public void shoulOpenProductAbove1999PLN() throws InterruptedException {
+    public void shouldOpenProductAbove1999PLN() throws InterruptedException {
         driver.get("https://www.moliera2.com/");
         driver.manage().window().maximize();
         Thread.sleep(3000);
