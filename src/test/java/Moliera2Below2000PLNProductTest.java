@@ -42,14 +42,6 @@ public class Moliera2Below2000PLNProductTest {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//*[@id=\"product-list\"]/div[2]/a/div[2]/div[1]/h2")).click();
         Thread.sleep(4000);
-        driver.findElement(By.xpath("//*[@id=\"cart-product-form-1825741\"]/div[2]/div[1]/div[1]/div[2]/span[2]")).click();
-        Thread.sleep(3000);
-        driver.findElement(By.xpath("//*[@id=\"cart-product-form-1825741\"]/div[2]/div[1]/div[1]/div[3]/ul/li[2]/div")).click();
-        Thread.sleep(3000);
-        driver.findElement(By.xpath("//*[@id=\"cart-product-form-1825741\"]/div[4]/div/div/a")).click();
-        Thread.sleep(3500);
-        driver.findElement(By.xpath("//*[@id=\"goto-cart\"]")).click();
-        Thread.sleep(4000);
 
         printSuccess();
     }
