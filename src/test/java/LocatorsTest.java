@@ -30,7 +30,7 @@ public class LocatorsTest {
         driver.findElement(By.xpath("//*[@id=\"user-name\"]"));
         driver.quit();
 
-        //Telling the system where to find chromedriver. On windows you also need add  .exe
+        //Telling the system where to find chromedriver. On windows you also need to add  .exe
         System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
         //1. Instantiate the driver
         driver = new ChromeDriver();
