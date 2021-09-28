@@ -10,7 +10,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class GettingInformationFromElement {
     WebDriver driver;
-    WebElement element;
 
     @Before
     public void setup(){
