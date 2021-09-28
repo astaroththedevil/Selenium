@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class KeyBoardActions {
     WebDriver driver;
-    WebElement element;
+    WebElement login, pass, btn;
 
     @Before
     public void setup(){
@@ -29,9 +29,9 @@ public class KeyBoardActions {
     }
     @Test
     public void test() throws InterruptedException {
-        WebElement login = driver.findElement(By.id("user-name"));
-        WebElement pass = driver.findElement(By.id("password"));
-        WebElement btn = driver.findElement(By.id("login-button"));
+        login = driver.findElement(By.id("user-name"));
+        pass = driver.findElement(By.id("password"));
+        btn = driver.findElement(By.id("login-button"));
         Actions action = new Actions(driver);
         action.sendKeys(login, "problem_user").build().perform();
         sleep();
